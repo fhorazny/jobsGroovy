@@ -46,14 +46,17 @@ sections {
 
 
 
-pipelineJob('firstJob') {
+job('firstJob') {
     parameters {
         stringParam('FIRSTPARAMETER', 'DEFAULT', 'DESCRIPTION')
     }
-    definition {
-        cps {
-            script(readFileFromWorkspace('firstJob.groovy'))
-            sandbox()
+	
+    steps {
+        dsl {
+            text(readFileFromWorkspace('firstJob.groovy'))
+            removeAction('DELETE')
+            //script(readFileFromWorkspace('firstJob.groovy'))
+            //sandbox()
         }
     }
 }
