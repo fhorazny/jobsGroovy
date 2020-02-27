@@ -8,6 +8,8 @@ sections {
         alignment('LEFT')
         jobs {
             name("firstJob")
+            name("firstTry")
+            name("secondTry")
         }
         columns {
             status()
