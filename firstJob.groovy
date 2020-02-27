@@ -1,13 +1,15 @@
-job('firstTry') {
+pipelinejob('firstTry') {
     description 'useless job, only calling some shell commands, when i figure out how to upload sources, will try building java.'
     label('rvais-openshift-testrunner')
-    scm {
+    cpsScm {
+        scm{
         git {
             branch('*/master')
             remote{
                 credentials('buildadm-ccikey')
                 github('com:fhorazny/uselessCalc.git')
             }
+        }
         }
     }
 
