@@ -52,7 +52,7 @@ pipelineJob('firstJob') {
     }
     definition {
         cps {
-            script(readFileFromWorkspace('firstjob.groovy'))
+            script(readFileFromWorkspace('firstJob.groovy'))
             sandbox()
         }
     }
