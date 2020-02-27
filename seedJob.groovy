@@ -46,10 +46,10 @@ sections {
 
 
 
-job('firstJob') {
-    parameters {
-        stringParam('FIRSTPARAMETER', 'DEFAULT', 'DESCRIPTION')
-    }
+//job('firstJob') {
+  //  parameters {
+    //    stringParam('FIRSTPARAMETER', 'DEFAULT', 'DESCRIPTION')
+//    }
 	
     steps {
         dsl {
