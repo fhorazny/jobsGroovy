@@ -89,7 +89,7 @@ job('secondJob') {
     label('rvais-openshift-testrunner')
 
     steps {
-        shell('''echo "Cool"''')
+        shell('''echo "Cool2"''')
     }
 }
 
