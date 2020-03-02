@@ -10,6 +10,9 @@ job('firstJob') {
             }
         }
     }
+    triggers {
+        githubPush()
+    }
 
     steps {
         maven {
