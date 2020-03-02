@@ -48,16 +48,16 @@ sections {
 
 
 
-//job('firstJob') {
-  //  parameters {
-    //    stringParam('FIRSTPARAMETER', 'DEFAULT', 'DESCRIPTION')
-//    }
+job('secondTry') {
+    parameters {
+        stringParam('FIRSTPARAMETER', 'DEFAULT', 'DESCRIPTION')
+    }
 	
-//    steps {
+    steps {
         dsl {
             text(readFileFromWorkspace('firstJob.groovy'))
             removeAction('DELETE')
             //script(readFileFromWorkspace('firstJob.groovy'))
             //sandbox()
         }
-//    }
+    }
