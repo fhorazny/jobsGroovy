@@ -6,7 +6,7 @@ job('secondTry') {
             branch('*/master')
             remote{
                 credentials('buildadm-ccikey')
-                github('com:fhorazny/uselessCalc.git')
+                github('fhorazny/uselessCalc')
             }
         }
     }
