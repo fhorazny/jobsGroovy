@@ -2,8 +2,11 @@
 scripts for seed job to execute and create jobs we want
 
 makeSeed.sh - rewrites seedJob.groovy and push it to git (here)
+
 seedJob.groovy - creates views and jobs defined by its own file and called in makeSeed.sh
+
 baseSeedJob.groovy - base for seedJob, mostly views, might add some features
+
 other *.groovy - jobs groovy scripts for creations
 
 
